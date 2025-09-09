@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React from 'react';
 import './Items.css';
 
 const Apple = () => {
@@ -6,7 +6,7 @@ const Apple = () => {
         <div className="flex justify-center items-center">
             <div className="relative">
                 {/* Apple body */}
-                <div className="w-12 h-12 bg-red-500 rounded-full relative"/>
+                <div className="w-10 h-10 bg-red-500 rounded-full relative"/>
                 {/* Apple stem */}
                 <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-1 h-3 bg-amber-800 rounded-sm rotate-[-5deg]"/>
                 {/* Apple leaf */}
@@ -23,7 +23,7 @@ const Orange = () => {
         <div className="flex justify-center items-center">
             <div className="relative">
                 {/* Orange body */}
-                <div className="w-12 h-12 bg-orange-500 rounded-full relative"/>
+                <div className="w-10 h-10 bg-orange-500 rounded-full relative"/>
                 {/* Orange texture dots */}
                 <div className="absolute top-2 left-3 w-1 h-1 bg-orange-600 rounded-full"/>
                 <div className="absolute top-4 left-2 w-1 h-1 bg-orange-600 rounded-full"/>
@@ -42,7 +42,7 @@ const Orange = () => {
 const Candy = () => {
     return (
         <div
-			className="relative inline-flex items-center justify-center px-3"
+			className="w-10 h-10 relative inline-flex items-center justify-center px-3"
 		>
 			<div className="relative rotate-[15deg]">
 				<svg
@@ -129,21 +129,21 @@ const Cupcake = () => {
     return (
         <div className="flex justify-center items-center">
             <div className="relative flex flex-col items-center">
-                <div className="flex flex-col items-center translate-y-[5px]">
+                <div className="flex flex-col items-center translate-y-[3px]">
                     {/* Cherry stem */}
-                    <div className="w-0.5 h-1 bg-green-600"/>
+                    <div className="w-0.5 h-0.5 bg-green-600"/>
                     {/* Cherry on top */}
-                    <div className="w-2 h-2 bg-red-500 rounded-full"/>
+                    <div className="w-1.5 h-1.5 bg-red-500 rounded-full"/>
                 </div>
                  {/* Frosting swirl */}
-                 <div className="w-12 h-6 bg-pink-200 border border-pink-300 translate-y-[3px] z-10 relative" style={{borderRadius: '70px 70px 30px 30px'}}/>
+                 <div className="w-9 h-4 bg-pink-200 border border-pink-300 translate-y-[2px] z-10 relative" style={{borderRadius: '50px 50px 20px 20px'}}/>
                 {/* Cupcake wrapper/base */}
-                <div className="relative w-10 h-6 bg-amber-100 border-2 border-amber-200 rounded-b-lg flex justify-between">
+                <div className="relative w-7 h-4 bg-amber-100 border border-amber-200 rounded-b-lg flex justify-between">
                     {/* Wrapper ridges */}
-                    <div className="ml-1 w-px bg-amber-300 rotate-[-2deg]"/>
+                    <div className="ml-0.5 w-px bg-amber-300 rotate-[-2deg]"/>
                     <div className="w-px bg-amber-300 rotate-[-1deg]"/>
                     <div className="w-px bg-amber-300 rotate-[1deg]"/>
-                    <div className="mr-1 w-px bg-amber-300 rotate-[2deg]"/>
+                    <div className="mr-0.5 w-px bg-amber-300 rotate-[2deg]"/>
                 </div>
             </div>
         </div>
@@ -161,7 +161,7 @@ const Pencil = () => {
                     <div className="w-full h-px bg-gray-400 mt-0.5"/>
                 </div>
                 {/* Pencil body */}
-                <div className="flex justify-between w-2 h-8 bg-yellow-500 mx-auto relative">
+                <div className="flex justify-between w-2 h-6 bg-yellow-500 mx-auto relative">
                     {/* Wood grain lines */}
                     <div className="w-px h-full bg-yellow-600"/>
                     <div className="w-px h-full bg-yellow-600"/>

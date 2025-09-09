@@ -1,0 +1,33 @@
+.crossed {
+    position: relative;
+}
+
+.crossed::before,
+.crossed::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 8px;
+    background-color: black;
+    transform-origin: center;
+    z-index: 20;
+}
+
+.crossed::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.crossed::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Make items smaller on very small screens */
+@media (max-width: 316px) {
+    .flex.flex-grow.flex-wrap {
+        transform: scale(0.8);
+        transform-origin: center top;
+        margin-bottom: -20%;
+    }
+}
